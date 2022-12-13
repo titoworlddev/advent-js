@@ -1,10 +1,14 @@
 function checkPart(part) {
   let norm = [...part]
-  norm.map((elem, i, arr) => {
-    if(i < arr.length - 1 && elem === arr[i + 1]) arr.splice(i, 1)
-  })
   let rev = [...norm]
   rev.reverse()
+  norm.forEach((elem, i) => {
+    if(elem !== rev[i]) {
+      norm.splice(i, 1)
+      rev.reverse().splice(i, 1) 
+      rev.reverse()
+    }
+  })
   return rev.join('') === norm.join('')
 }
 
@@ -18,3 +22,5 @@ checkPart("miidim") // true
 
 checkPart("midu") // false
 // "midu" no puede ser un palíndromo después de eliminar un carácter
+
+checkPart("zzzoonzzz") // true
