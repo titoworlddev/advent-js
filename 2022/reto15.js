@@ -1,5 +1,4 @@
 function decorateTree(base) {
-  return []
 }
 
 // Arriba coloca  :     P     R     B     P
@@ -17,4 +16,4 @@ decorateTree('B P R P')
 // 'B P R P'
 // ]
 
-decorateTree('B B') // ['B', 'B B']
+// decorateTree('B B') // ['B', 'B B']
