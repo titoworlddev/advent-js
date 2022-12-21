@@ -2,14 +2,14 @@ function fixLetter(letter) {
   let fixed = letter
     .trim()
     .replaceAll(/^(\w)/g, ($1) => $1.toUpperCase())
-    .replaceAll(/\s+/g, " ")
-    .replaceAll(/\s?([?!.,] ?)/g, "$1")
-    .replaceAll(/([?!.,])+/g, "$1")
-    .replaceAll(/(Santa Claus)/gi, "Santa Claus")
-    .replaceAll(/\s([?!.,])/g, "$1")
-    .replaceAll(/([?!.])\s([A-z])/g, ($2) => $2.toUpperCase())
-    .replaceAll(/([,.!?])(\w)/g, "$1 $2")
-    .replace(/([A-z])$/g, "$1.");
+    .replaceAll(/\s+/g, ' ')
+    .replaceAll(/\s?([?!.,] ?)/g, '$1')
+    .replaceAll(/([?!.,])+/g, '$1')
+    .replaceAll(/(Santa Claus)/gi, 'Santa Claus')
+    .replaceAll(/\s([?!.,])/g, '$1')
+    .replaceAll(/([?!.])\s(\w)/g, ($2) => $2.toUpperCase())
+    .replaceAll(/([,.!?])(\w)/g, '$1 $2')
+    .replace(/(\w)$/g, '$1.');
 
   return fixed;
 }
