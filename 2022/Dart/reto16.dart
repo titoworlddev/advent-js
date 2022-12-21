@@ -15,7 +15,7 @@ String fixLetter(String letter) {
           RegExp(r'([?!.]\s)(\w)'), (m) => '${m[1]}${m[2]!.toUpperCase()}')
       .replaceAllMapped(RegExp(r'(\w[?1.,])(\w)'), (m) => '${m[1]} ${m[2]}')
       .replaceAllMapped(RegExp(r'(\w)\s([?!.,])'), (m) => '${m[1]}${m[2]}')
-      .replaceFirstMapped(RegExp(r'\b(\w)'), (m) => m[1]!.toUpperCase());
+      .replaceFirstMapped(RegExp(r'^(\w)'), (m) => m[1]!.toUpperCase());
 
   return fixed;
 }
