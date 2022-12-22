@@ -25,7 +25,7 @@ function carryGifts(gifts, maxWeight) {
 // ¡Pero ojo! Cada saco puede llevar un máximo de peso, y si el peso de los regalos de un saco supera el peso máximo, se debe separar el último regalo del saco y ponerlo en el siguiente saco.
 
 console.log(carryGifts(['toy', 'toy', 'toy', 'toy'], 9));
-// Deberia ser: ['toy toy toy', 'toy']
+// Debería ser: ['toy toy toy', 'toy']
 
 // carryGifts(['game', 'bike', 'book', 'toy'], 10)
 // ['game bike', 'book toy']
