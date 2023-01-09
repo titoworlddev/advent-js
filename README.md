@@ -5,3 +5,5 @@ This is a project showing my solutions used to complete midudev's [advent.js](ht
 Here I have learned a lot about **JavaScript** and I have greatly improved my programming logic.
 
 Glad to have participated and thanks to [midudev](https://github.com/midudev) for doing this kind of thing for the community.
+
+In the future I will be completing the challenges again but with the language **Dart**
